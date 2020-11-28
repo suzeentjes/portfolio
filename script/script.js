@@ -1,22 +1,20 @@
-const menuBtn = document.querySelector ('.menu-btn');
-let menuOpen = false;
-menuBtn.addEventListener('click', () => {
-  if(!menuOpen) {
-    menuBtn.classList.add('open');
-    menuOpen = true;
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
   } else {
-    menuBtn.classList.remove('open');
-    menuOpen = false;
+    mybutton.style.display = "none";
   }
-  
-});
-
-var button = document.querySelector(".menu-btn");
-
-console.log(button)
-
-function toggleMenu() {
-document.body.classList.toggle("toonMenu");
 }
 
-button.addEventListener("click", toggleMenu);
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+mybutton.addEventListener("click");
