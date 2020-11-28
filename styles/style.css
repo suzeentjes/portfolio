@@ -77,7 +77,6 @@ body main section:first-of-type img {
   width: 10em;
   height: 15em;
 
-
 }
 
 /*De 'helli, I'm Suze Entjes tekst*/
@@ -95,21 +94,28 @@ body main section:first-of-type div button {
   background-color: #FFF5F5;
   color: #FC7E37;
   font-size: 16px;
-  padding: 0.5em 0.8em 0.4em 0.8em;
+  padding: 0.5em 1em 0.4em 1em;
   border: 0.15em solid #FC7E37;
   border-radius: 2em;
+  box-shadow: 5px 5px 5px #ccc;
+      -moz-box-shadow: 5px 5px 5px #ccc;
+      -webkit-box-shadow: 5px 5px 5px #ccc;
+      -khtml-box-shadow: 5px 5px 5px #ccc;
 
   text-align: center;
 }
 
 body main section:first-of-type button:hover {
-  color: white;
+  color: #FFF5F5;
   background-color: #FC7E37;
+
+  border-radius: 2em;
 }
 
 
 section:nth-of-type(2) {
-  text-align: center;
+  text-align: left;
+  margin: 2em 0 0 2em;
 
 }
 
@@ -118,7 +124,7 @@ section:nth-of-type(4) {
 }
 
 section h3 {
-  font-family: 'Playfair Display';
+
   margin: 0.5em 0 1em 0;
   max-width: 20em;
 }
@@ -183,14 +189,6 @@ footer {
   main > img {
     max-width: 15em;
   }
-  section:nth-of-type(2) {
-    display: grid;
-    grid-template-columns: repeat (1,1fr);
- }
-  section:nth-of-type(2) article{
-    margin: 0 auto;
- }
-  section:nth-of-type(2) h3   {
-    margin: 1em auto;
+
 
 }
