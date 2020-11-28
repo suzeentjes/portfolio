@@ -61,11 +61,11 @@ body header > a img {
 
 body main section:first-of-type {
   display: flex;
-  margin-top: 2em;
+  margin-top: 3em;
 }
 
 body main section:first-of-type div {
-  margin: 3em 1.5em 0 ;
+  margin: 2em 1.7em 0 ;
 }
 
 
@@ -83,7 +83,7 @@ body main section:first-of-type img {
 body main section:first-of-type div h1 {
   font-size: 18pt;
   color: #280B0B;
-  text-shadow: 4px 2px 0px rgba(255, 145, 81, 0.3);
+  text-shadow: 4px 2px 0px rgba(255, 145, 81, 0.2);
   font-family: 'Playfair Display';
   text-align: left;
   margin-bottom: 1.5em;
