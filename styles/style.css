@@ -29,13 +29,15 @@ header nav {
 header nav ul {
   display: flex;
   flex-direction: row;
+
 }
 
 header nav ul li {
   text-align: center;
-  padding: 1em;
+  padding: 0.75em;
   list-style-type: none;
   margin-bottom: 1.5em;
+
 }
 
 
@@ -44,6 +46,7 @@ header nav ul li a {
   font-size: 16px;
   text-decoration: none;
   color: #280B0B;
+
 }
 
 /*Logo*/
@@ -53,6 +56,16 @@ body header > a img {
   width: 2em;
   margin-left: 1.5em;
   margin-top: 1.5em;
+
+}
+
+body main section:first-of-type {
+  display: flex;
+  margin: 0;
+}
+
+body main section:first-of-type div {
+  margin: 3em 2em 0 ;
 }
 
 
@@ -63,25 +76,24 @@ body main section:first-of-type img {
   background-image: url("");
   background-repeat: no-repeat;
   width: 10em;
-  right: 1.5em;
+
 }
 
 /*De 'helli, I'm Suze Entjes tekst*/
-body main section:nth-of-type(2) h1 {
+body main section:first-of-type div h1 {
   font-size: 18pt;
   color: #280B0B;
-  margin-left: 1em;
+
   font-family: 'Playfair Display';
   text-align: left;
+  margin-bottom: 1em;
 }
 
 /*Knop die naar mijn portfolio leidt*/
-body main section:first-of-type button {
+body main section:first-of-type div button {
   background-color: #FFF5F5;
   color: #FC7E37;
   font-size: 16px;
-  top: 16em;
-  margin-left: 1.5em;
   padding: 0.5em 0.8em 0.4em 0.8em;
   border: 0.15em solid #FC7E37;
   border-radius: 2em;
@@ -89,7 +101,7 @@ body main section:first-of-type button {
   text-align: center;
 }
 
-body main button:hover {
+body main section:first-of-type button:hover {
   color: white;
   background-color: #FC7E37;
 }
@@ -97,10 +109,11 @@ body main button:hover {
 
 section:nth-of-type(2) {
   text-align: center;
+
 }
 
 section:nth-of-type(4) {
-  margin-top: 2em; 
+  margin-top: 2em;
 }
 
 section h3 {
