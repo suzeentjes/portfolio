@@ -65,17 +65,14 @@ body main section:first-of-type {
 }
 
 body main section:first-of-type div {
-  margin: 1.5em 1.7em 0 ;
+  margin: 1.5em 1.5em  ;
 }
-
-
-
 
 /*Afbeelding van mijzelf*/
 body main section:first-of-type img {
   background-repeat: no-repeat;
-  width: 10em;
-  height: 15em;
+  width: 9.0em;
+  height: 12.5em;
 
 }
 
@@ -86,7 +83,7 @@ body main section:first-of-type div h1 {
   text-shadow: 4px 2px 0px rgba(255, 145, 81, 0.2);
   font-family: 'Playfair Display';
   text-align: left;
-  margin-bottom: 2em;
+  margin: 0 0 1em 0;
 }
 
 /*Knop die naar mijn portfolio leidt*/
@@ -94,35 +91,41 @@ body main section:first-of-type div button {
   background-color: #FC7E37;
   color: #FFF5F5;
   font-size: 16px;
-  padding: 0.5em 0.8em 0.4em 0.8em;
+  padding: 0.4em 0.8em 0.3em 0.8em;
   border: 0.15em solid #FC7E37;
   border-radius: 2em;
   box-shadow: 5px 5px 0px rgba(255, 145, 81, 0.1);
-
-
   text-align: center;
 }
 
 body main section:first-of-type button:hover {
   color: #FC7E37;
   background-color: #FFF5F5;
-
   border-radius: 2em;
 }
 
 
 section:nth-of-type(2) {
+  color: #280B0B;
+  margin-left: 2em;
   text-align: left;
-  margin: 2em 0 0 2em;
-
+  max-width: 20em;
 }
 
-section:nth-of-type(4) {
-  margin-top: 2em;
+section:nth-of-type(2)  button {
+  border-color: #FC7E37;
+  color: #FC7E37;
+  border-radius: 0.25em;
+  padding: 0.5em;
+  background-color: #FFF5F5;
+  margin-top: 1em;
+  font-size: 14px;
 }
 
-section h3 {
 
+
+main section > h3 {
+  font-family: 'Playfair Display';
   margin: 0.5em 0 1em 0;
   max-width: 20em;
 }
@@ -139,17 +142,40 @@ section:nth-of-type(2) article img {
   margin: 0.25em 0 ;
 }
 
-
-
-section article p {
+section:nth-of-type(2) article p {
   font-size: 16px;
   font-family: 'Lato', sans-serif;
-  max-width: 20em;
+  max-width: 35em;
+  text-align: center;
   color: #280B0B;
 }
 
-section:nth-of-type(4) article {
+section:nth-of-type(4) {
+  background-color: #280B0B;
+  z-index: 2;
 }
+
+section:nth-of-type(4) h3 {
+  margin: 2em 0 0 1.5em;
+  color: #FFF5F5;
+  padding: 1.5em 0 1.5em 0;
+}
+
+section:nth-of-type(4) article {
+  margin-bottom: 1em;
+
+}
+
+section:nth-of-type(4) article img {
+  background-repeat: no-repeat;
+  width: 22em;
+  height: 11em;
+  z-index: 10;
+  display: block;
+  margin: 0 auto;
+}
+
+
 
 /*De oranje button rechts*/
 #myBtn  {
