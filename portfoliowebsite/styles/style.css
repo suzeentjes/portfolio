@@ -1,0 +1,249 @@
+/* CSS Document */
+
+*, *::after, *::before {
+  box-sizing:border-box;
+  margin: 0; padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #FFF5F5;
+  position: relative;
+
+}
+
+header {
+
+}
+
+
+/*Navigatie als je op hamburgermenu klikt*/
+header nav {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  z-index: 10;
+
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+header nav ul li {
+  text-align: center;
+  padding: 0.75em;
+  list-style-type: none;
+  margin-bottom: 1.5em;
+
+}
+
+
+/*Linkjes naar andere delen van de website*/
+header nav ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #280B0B;
+
+}
+
+/*Logo*/
+body header > a img {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 2em;
+  margin-left: 1.5em;
+  margin-top: 1.5em;
+
+}
+
+body main section:first-of-type {
+  display: flex;
+  margin-top: 3em;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 2em;
+
+
+}
+
+body main section:first-of-type div {
+  margin: 1.5em 1.5em;
+
+}
+
+/*Afbeelding van mijzelf*/
+body main section:first-of-type img {
+  background-repeat: no-repeat;
+  width: 9.0em;
+  height: 12.5em;
+
+
+}
+
+/*De 'helli, I'm Suze Entjes tekst*/
+body main section:first-of-type div h1 {
+  font-size: 18pt;
+  color: #280B0B;
+  text-shadow: 4px 2px 0px rgba(255, 145, 81, 0.2);
+  font-family: 'Playfair Display';
+  text-align: left;
+  margin: 0 0 1em 0;
+}
+
+/*Knop die naar mijn portfolio leidt*/
+body main section:first-of-type div button {
+  background-color: #FC7E37;
+  color: #FFF5F5;
+  font-size: 16px;
+  padding: 0.4em 0.8em 0.3em 0.8em;
+  border: 0.15em solid #FC7E37;
+  border-radius: 2em;
+  box-shadow: 5px 5px 0px rgba(255, 145, 81, 0.1);
+  text-align: center;
+}
+
+body main section:first-of-type button:hover {
+  color: #FC7E37;
+  background-color: #FFF5F5;
+  border-radius: 2em;
+}
+
+
+section:nth-of-type(2) {
+  color: #280B0B;
+  margin-left: 2em;
+  margin: 0 auto;
+  max-width: 20em;
+}
+
+section:nth-of-type(2)  button {
+  border-color: #FC7E37;
+  color: #FC7E37;
+  border-radius: 0.25em;
+  padding: 0.5em;
+  background-color: #FFF5F5;
+  margin-top: 1em;
+  font-size: 14px;
+}
+
+
+
+main section:nth-of-type(2) > h3 {
+  font-family: 'Playfair Display';
+  margin: 0.5em 0 1em 0;
+
+}
+
+
+section:nth-of-type(2) article {
+  margin-bottom: 1.5em;
+  left: 4em;
+}
+
+section:nth-of-type(2) article img {
+  width: 5em;
+  top: 12em;
+  margin: 0.25em 0;
+
+}
+
+section:nth-of-type(2) article p {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  max-width: 35em;
+  color: #280B0B;
+}
+
+section:nth-of-type(4) {
+  background-color: #280B0B;
+  z-index: 2;
+  margin: 3em 0 1.5em 0;
+  text-align: center;
+  padding: 1em;
+}
+
+section:nth-of-type(4) h3 {
+  font-family: 'Playfair Display';
+  color: #FFF5F5;
+  padding: 0 0 1em 0;
+  margin-left: -10em;
+}
+
+section:nth-of-type(4) article {
+  margin-bottom: 1em;
+
+}
+
+section:nth-of-type(4) article img {
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 90%;
+  z-index: 10;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+/*De oranje button rechts*/
+#myBtn  {
+  display: none;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 15px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: transparent;
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 5px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  /* Add a dark-grey background on hover */
+}
+
+button > img {
+  width: 2em;
+}
+
+footer section {
+  text-align: left;
+  max-width: 20em;
+  margin: 0 auto;
+
+}
+
+footer section h3{
+  text-align: left;
+  font-family: 'Playfair Display';
+  color: #280B0B;
+  margin-bottom: 1em
+}
+
+footer nav ul li  {
+  list-style-type: none;
+}
+
+footer nav ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #280B0B;
+  list-style-type: none;
+}
+
+@media (max-width: 550px) {
+  main > img {
+    max-width: 15em;
+  }
+
+
+}
