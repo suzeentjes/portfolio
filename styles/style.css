@@ -65,7 +65,7 @@ body main section:first-of-type {
   margin-top: 3em;
   margin: 0 auto;
   justify-content: center;
-  margin-top: 1em;
+  margin-top: 2em;
 
 
 }
@@ -156,21 +156,21 @@ section:nth-of-type(2) article p {
   font-family: 'Lato', sans-serif;
   text-align: left;
   max-width: 35em;
-
   color: #280B0B;
 }
 
 section:nth-of-type(4) {
   background-color: #280B0B;
   z-index: 2;
-  margin: 1.5em 0;
-  text-align: center
+  margin: 3em 0 1.5em 0;
+  text-align: center;
+  padding: 1em;
 }
 
 section:nth-of-type(4) h3 {
   font-family: 'Playfair Display';
   color: #FFF5F5;
-  padding: 1.5em 0 1.5em 0;
+  padding: 0 0 1em 0;
   margin-left: -10em;
 }
 
@@ -181,8 +181,8 @@ section:nth-of-type(4) article {
 
 section:nth-of-type(4) article img {
   background-repeat: no-repeat;
-  width: 22em;
-  height: 11em;
+  width: 90%;
+  height: 90%;
   z-index: 10;
   display: block;
   margin: 0 auto;
@@ -215,12 +215,30 @@ button > img {
   width: 2em;
 }
 
+footer section {
+  text-align: left;
+  max-width: 20em;
+  margin: 0 auto;
 
-
-footer {
-  background-color: #280B0B;
 }
 
+footer section h3{
+  text-align: left;
+  font-family: 'Playfair Display';
+  color: #280B0B;
+  margin-bottom: 1em
+}
+
+footer nav ul li  {
+  list-style-type: none;
+}
+
+footer nav ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #280B0B;
+  list-style-type: none;
+}
 
 @media (max-width: 550px) {
   main > img {
