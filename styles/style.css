@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #FFF5F5;
   position: relative;
 
@@ -104,12 +104,14 @@ body main section:first-of-type div button {
   border-radius: 2em;
   box-shadow: 5px 5px 0px rgba(255, 145, 81, 0.1);
   text-align: center;
+  font-family: 'Poppins';
 }
 
 body main section:first-of-type button:hover {
   color: #FC7E37;
   background-color: #FFF5F5;
   border-radius: 2em;
+  font-family: 'Poppins';
 }
 
 
@@ -128,6 +130,7 @@ section:nth-of-type(2)  button {
   background-color: #FFF5F5;
   margin-top: 1em;
   font-size: 14px;
+  font-family: 'Poppins';
 }
 
 
@@ -153,7 +156,7 @@ section:nth-of-type(2) article img {
 
 section:nth-of-type(2) article p {
   font-size: 16px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-align: left;
   max-width: 35em;
   color: #280B0B;
@@ -226,18 +229,53 @@ footer section h3{
   text-align: left;
   font-family: 'Playfair Display';
   color: #280B0B;
-  margin-bottom: 1em
 }
 
-footer nav ul li  {
+footer section p {
+  margin: 1em 0;
+}
+
+footer section > button {
+  background-color: #FC7E37;
+  color: #FFF5F5;
+  font-size: 14px;
+  padding: 0.4em 1em;
+  border: 0.15em solid #FC7E37;
+  border-radius: 1.5em;
+  box-shadow: 5px 5px 0px rgba(255, 145, 81, 0.1);
+  text-align: center;
+  font-family: 'Poppins';
+  margin-bottom: 1em;
+}
+
+footer section ul {
+  display: flex;
+}
+
+footer section li {
+  background-image: url("../images/linkedinleeg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 3em;
+  height: 3em;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+  margin-right: 0.5em;
   list-style-type: none;
 }
 
-footer nav ul li a {
-  font-size: 16px;
-  text-decoration: none;
-  color: #280B0B;
+footer section li.instagram {
+  background-image: url("../images/instagramleeg.png");
   list-style-type: none;
+}
+
+ li.linkedin:hover {
+  background-image: url("../images/linkedinvol.png");
+  background-repeat: no-repeat;
+}
+
+ li.instagram:hover {
+  background-image: url("../images/instagramvol.png");
 }
 
 @media (max-width: 550px) {
