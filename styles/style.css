@@ -578,17 +578,32 @@ footer section li.instagram {
   transition: 0.25s;
 }
 
+@media (max-width: 400px) {
+  header div nav ul li a {
+    font-size: 12px;
+  }
+
+  body main section:first-of-type div a {
+    font-size: 13px;
+  }
+}
+
 @media (max-width: 550px) {
   main > img {
     max-width: 15em;
   }
+
+
+  header div nav ul li a {
+    font-size: 15px;
+  }
+
+  header div {
+    padding: 2em 1em;
+  }
+
+
 }
-
-@media screen and (max-width: 550px) {
-
-}
-
-
 
 @media screen and (max-width: 900px) {
   body header > a img {
